@@ -43,40 +43,7 @@ This can be checked by comparing the user's password with the domain he is tryin
 ### Modify link-clicking behavior ###
 Everytime user clicks on any link in the webpage, we check if the domain he is trying to enter is in Alexa top 10000 websites by using Alexa API provided in references. If the rank of the website falls above 10000, then we issue a warning saying this isn't a safe website. If the user still wants to enter the website, then we store the website to his whitelisted websites in the database.
 
-## Technologies ##
 
-#### Front End ####
-* JavaScript
-* JQuery
-* SweetAlert
-* BootStrap
-
-#### Back End ####
-* Python
-* Flask
-
-#### Database ####
-* MongoDB
-
-## Task Assignment ##
-* Hima will develop the database and the backend code for interfacing with it.
-* Satish and Andrew will work on the front end code for the extension.
-
-## Questions ##
-
-* Initially, we're planning on storing the database files locally. Once the code is 
- working, we could set up a server. What would the professor like to see in this 
- regard, though? He said in class that local storage is acceptable but not desirable.
-* Does the professor want us to be able to discourage patterns between passwords? The 
- assignment only describes enforcing password uniqueness.
-* The Alexa top sites API is a paid service and only gives the ability to query rank 
- ranges (ie, top 100 sites). There doesn't seem to be a method for checking an 
- individual site's ranking upon request, but we did find a url (alexa.com/siteinfo) 
- that gives somewhat detailed information about site traffic and appears to display 
- a site's global ranking. Is using this site and scraping the global ranking from the 
- page html acceptable for part 3 of our task?
-* How will the project be demonstrated for grading? Will we use one of our laptops to
- show the instructor/TAs the functionality?
 
 ## References ##
 * https://aws.amazon.com/alexa-top-sites/
